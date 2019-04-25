@@ -1,0 +1,81 @@
+
+#include "Persona.h"
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// CONSTRUCTORES
+Persona::Persona() {
+}
+
+Persona::Persona(string Nombre, string Apellido, string Email, int Edad, int Cedula, long Telefono) {
+	this->Nombre = Nombre ;
+	this->Apellido = Apellido ;
+	this->Email = Email ;
+	this->Edad = Edad ;
+	this->Cedula = Cedula ;
+	this->Telefono = Telefono ;
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// SETTERS
+void Persona::setNombre(string Nombre) {
+	this->Nombre = Nombre ;
+}
+
+void Persona::setApellido(string Apellido) {
+	this->Apellido = Apellido ;
+}
+
+void Persona::setEmail(string Email) {
+	this->Email = Email ;
+}
+
+void Persona::setEdad(int Edad) {
+	this->Edad = Edad ;
+}
+
+void Persona::setCedula(long Cedula) {
+	this->Cedula = Cedula ;
+}
+
+void Persona::setTelefono(unsigned long Telefono) {
+	this->Telefono = Telefono ;
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// GETTERS
+string Persona::getNombre() {
+	return this->Nombre ;
+}
+
+string Persona::getApellido() {
+	return this->Apellido ;
+}
+
+string Persona::getEmail() {
+	return this->Email ;
+}
+
+int Persona::getEdad() {
+	return this->Edad ;
+}
+
+long Persona::getCedula() {
+	return this->Cedula ;
+}
+
+unsigned long Persona::getTelefono() {
+	return this->Telefono ;
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//DESTRUCTOR
+Persona::~Persona(){
+}
